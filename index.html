@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 1 - Simple Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Menu -->
+  <nav>
+    <div class="logo">MyPage</div>
+    <ul>
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Section 1: Heading, Paragraph, Image -->
+    <section class="content-section" id="home">
+      <img
+        src="https://picsum.photos/seed/task1photo/720/400.jpg"
+        alt="Scenic landscape"
+        class="hero-image"
+      >
+      <h1>Welcome to <span>MyPage</span></h1>
+      <p>
+        This is a simple webpage built with HTML, CSS, and JavaScript.
+        It contains a navigation menu, a content section with an image,
+        and a basic form below.
+      </p>
+    </section>
+
+    <!-- Section 2: Form with Input and Submit -->
+    <section class="form-section" id="contact">
+      <h2>Get in Touch</h2>
+      <form id="myForm" class="form-row" novalidate>
+        <input
+          type="text"
+          id="nameInput"
+          placeholder="Enter your name"
+          required
+        >
+        <button type="submit">Submit</button>
+      </form>
+      <p id="formMsg" class="form-msg"></p>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
